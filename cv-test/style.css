@@ -14,7 +14,29 @@ html{
     padding: 0;
   }
 
+h1{
+  font-size: 100px;
+}
 
+
+.grid-container{
+display: grid;
+border: 5px solid black;
+grid-template-columns: repeat();
+
+}
+
+.grid-item-1{
+  text-align: center;
+  
+ 
+  
+}
+.grid-item-2{
+ 
+  
+  
+}
   .section-one{
     position:relative;
     background: linear-gradient(to bottom, #33cc33 0%, #ffffff 100%);
@@ -24,14 +46,12 @@ html{
 
   
 
-  .section-one h1{
-    text-align: center;
-    
-  }
+  
 
   .profile-picture{
     border: 10px solid green;
-    position: relative;
+    position: absolute;
+
     
   
   } 
@@ -41,6 +61,7 @@ html{
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
     animation-name: spin;
+    
 
   }
 
@@ -89,7 +110,7 @@ html{
 .contact li{
     display: inline-block;
      padding: 10px 20px; 
-    
+     
     
     
 }
@@ -97,6 +118,15 @@ html{
 .contact li img{
   width:30px;
   height: 30px;
+  transition: all 1s;
+}
+
+
+.contact li img:hover{
+  transition: all 0.1s;
+      box-shadow: 0 0 10px 10px white;
+      background-color: white;
+      
   
 }
 
@@ -214,6 +244,13 @@ position: relative;
       transition: all 1s;
       box-shadow: 0 0 20px 20px #000000;
     }
-.box{
+.box, .contact{
   transition: all 1s;
+}
+
+.section-three{
+  position:relative;
+  background: linear-gradient(to bottom, #33cc33 0%, #ffffff 100%);
+  border: 5px solid yellow;
+  min-height: 100vh;
 }
