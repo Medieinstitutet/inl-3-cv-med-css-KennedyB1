@@ -14,120 +14,6 @@ html{
     padding: 0;
   }
 
-/*
-header{
-    position: absolute;
-    z-index: 3;
-  }
-  .menu{
-    position: fixed;
-  }
-  #button-menu{
-    position: fixed;
-    z-index: 6;
-    pointer-events: none;
-  }
-  #button-menu span {
-    display: block;
-    background-color: black;
-    border-radius: 6px;
-    margin-top:2px;
-    position: relative;
-    width: 80%;
-    height: 3px;
-    margin-left: auto;
-    margin-right: auto;
-  }
- 
-  #button-menu, input{
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-  }
-  input {
-    position: fixed;
-    z-index: 3;
-    opacity: 0;
-    cursor: pointer;
-  }
-   input + .menu #button-menu span:nth-child(2) {
-    left: -3px;
-    transition: left 0.2s ease-in-out;
-  }
-  input:hover + .menu #button-menu span:nth-child(2) {
-    left: 0px;
-  }
-  .menu #button-menu span:hover{
-    transform: scaleY(5);
-  }
-  input:checked+.menu #button-menu span {
-    transition: transform 1s ease-in-out;
-  }
-  input+.menu #button-menu span {
-    transition: transform 1s ease-in-out;
-  }
-  input:checked+.menu #button-menu span:nth-child(2) {
-    transform: scaleY(5);
-    left: 0px;
-  }
-  input:checked+.menu #button-menu span:nth-child(1) {
-    transform: scaleX(0);
-  }
-  input:checked+.menu #button-menu span:nth-child(3) {
-    transform: scaleX(0);
-  } 
-  input:checked+.menu nav {
-    visibility: visible;
-  }
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color:transparent;
-    width: 100vw;
-    height: 100vh;
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    visibility: hidden;
-    z-index: 3;
-  }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-    text-align: center;
-    background-color: rgba(255, 253, 253, 0.9);
-  }
-  nav a{
-    color: black;
-    font-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    height: 100%;
-  }
-  nav li{
-    font-size: 50px;
-    font-weight: bold;
-    filter: drop-shadow(0 0 0.9rem grey);
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-  }
-  nav a:hover{
-    text-decoration: underline;
-    text-decoration-color: #07e136;
-    cursor: pointer;
-  }
-  nav li:hover {
-    background-color: whitesmoke;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  } */
-
 
   .section-one{
     position:relative;
@@ -172,15 +58,10 @@ header{
     border-radius: 150px;
 
   }
-/* .heading-profile{
-    display: flex;
-} */
+
 
   .center {
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; */
+    
     
     position: relative;
   top: 0;
@@ -233,12 +114,25 @@ header{
     
   }
 
-  .portfolio{
-    /* justify-content: space-evenly; 
-    height: 100%;
-  width: 100%; */
+ .portfolio a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+     
+    
+  } 
+
+  .link-one span{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
     
   }
+
 
   .portfolio span {
 color: green;
@@ -261,6 +155,7 @@ border: 5px solid black;
 background: url("bakgrund.jpg") no-repeat center;
 background-size: cover;
 background-color: #cccccc;
+position: relative;
 
 }
 
@@ -270,7 +165,9 @@ background-color: #cccccc;
     border: 5px solid black;
     background: url("bakgrund.jpg") no-repeat center;
     background-size: cover;
-    background-color: #cccccc;}
+    background-color: #cccccc;
+    position: relative;
+  }
 
 .portfolio-three{
     margin: 40px;
@@ -278,7 +175,9 @@ background-color: #cccccc;
     border: 5px solid black;
     background: url("bakgrund.jpg") no-repeat center;
     background-size: cover;
-    background-color: #cccccc;} 
+    background-color: #cccccc;
+    position: relative;
+  } 
 
   .portfolio-four{
       margin: 40px;
@@ -286,6 +185,35 @@ background-color: #cccccc;
       border: 5px solid black;
       background: url("bakgrund.jpg") no-repeat center;
       background-size: cover;
-      background-color: #cccccc;} 
+      background-color: #cccccc;
+      position: relative;
+    } 
 
+    .portfolio-one:hover{
+      opacity: 60%;
+      border-color: white;
+      transition: all 1s;
+      box-shadow: 0 0 20px 20px #000000;
+    }
 
+    .portfolio-two:hover{
+      opacity: 60%;
+      border-color: white;
+      transition: all 1s;
+      box-shadow: 0 0 20px 20px #000000;
+    }
+    .portfolio-three:hover{
+      opacity: 60%;
+      border-color: white;
+      transition: all 1s;
+      box-shadow: 0 0 20px 20px #000000;
+    }
+    .portfolio-four:hover{
+      opacity: 60%;
+      border-color: white;
+      transition: all 1s;
+      box-shadow: 0 0 20px 20px #000000;
+    }
+.box{
+  transition: all 1s;
+}
