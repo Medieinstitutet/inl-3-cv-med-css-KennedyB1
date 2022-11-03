@@ -24,7 +24,6 @@
     <section class="section-one">
       <nav>
         <ul class="nav-list">
-          <li><a href="#">CV</a></li>
           <li><a href="#section-two">Portfolio</a></li>
         </ul>
       </nav>
@@ -37,9 +36,9 @@
         </div>
         <div class="grid-item-2">
           <div class="profile-picture">
-            <img class="center" src="confetti" />
+            <img class="center" src="confetti" alt="Moving confetti" />
 
-            <img class="center-me" src="me.klippt.jpg" />
+            <img class="center-me" src="dog.jpg" alt="dog" />
           </div>
         </div>
       </div>
@@ -62,26 +61,51 @@
           </ul>
         </div>
         <div class="contact-me">
-          <h2>Contact me</h2>
+          <form id="contact-form" action="action_page.php" method="post">
+            <fieldset>
+              <legend><h2>Contact me</h2></legend>
+              <div class="one">
+                <label for="name"> Name:</label><br />
+                <input id="name" type="text" required autofocus />
+              </div>
+              <div class="three">
+                <label for="msg">Message:</label><br />
+                <textarea id="msg" rows="10" cols="30" required></textarea>
+              </div>
+              <div class="two">
+                <label for="mail">E-mail:</label><br />
+                <input id="mail" type="email" required />
+              </div>
+              <div class="four">
+                <button name="submit" type="submit">Submit</button>
+              </div>
+            </fieldset>
+          </form>
 
-          <form id="contact-form" action="" method="post">
+          <!-- <form id="contact-form" action="action_page.php" method="post">
             <fieldset class="one">
-              <label for="fname"> Name:</label><br />
-              <input type="text" tabindex="1" required autofocus />
+              <legend></legend>
+              <label for="name"> Name:</label><br />
+              <input id="name" type="text" tabindex="1" required autofocus />
             </fieldset>
             <fieldset class="three">
               <label for="msg">Message:</label><br />
-              <textarea tabindex="3" rows="10" cols="30" required></textarea>
+              <textarea
+                id="msg"
+                tabindex="3"
+                rows="10"
+                cols="30"
+                required
+              ></textarea>
             </fieldset>
-
             <fieldset class="two">
               <label for="mail">E-mail:</label><br />
-              <input type="email" tabindex="2" required />
+              <input id="mail" type="email" tabindex="2" required />
             </fieldset>
             <fieldset class="four">
               <button name="submit" type="submit" tabindex="4">Submit</button>
             </fieldset>
-          </form>
+          </form> -->
         </div>
       </section>
     </section>
@@ -112,6 +136,5 @@
         </article>
       </div>
     </section>
-    <!-- <section class="section-three"><h5>Erfarenhet</h5></section> -->
   </body>
 </html>
