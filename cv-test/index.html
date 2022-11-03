@@ -2,43 +2,50 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <!-- Menu -->
-    </header>
+    <header></header>
     <section class="section-one">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">CV</a></li>
+          <li><a href="#section-two">Portfolio</a></li>
+        </ul>
+      </nav>
       <div class="grid-container">
         <div class="grid-item-1">
           <h1>
-            Grid<br />
-            1
+            Simon<br />
+            Vindahl
           </h1>
         </div>
         <div class="grid-item-2">
           <div class="profile-picture">
-            <img
-              class="center"
-              src="https://acegif.com/wp-content/uploads/gif/confetti-10.gif"
-              style="width: 200px; max-width: 200px; height: 200px"
-            />
-            <!-- Ändra storlek -->
-            <img
-              class="center-me"
-              src="me.klippt.jpg"
-              style="width: 200px; max-width: 200px; height: 200px"
-            />
-            <!-- Ändra storlek -->
+            <img class="center" src="confetti" />
+
+            <img class="center-me" src="me.klippt.jpg" />
           </div>
         </div>
       </div>
-      <div class="contact">
-        <h2>Kontakta mig</h2>
-        <section>
+      <section class="contact">
+        <h2>Follow my progress</h2>
+        <div class="contact-icon">
           <ul>
             <li>
               <a href="#"> <img alt="Facebook" src="facebook.png" /></a>
@@ -47,20 +54,39 @@
               <a href="#"> <img alt="Instagram" src="instagram.png" /></a>
             </li>
             <li>
-              <a href="#"> <img alt="Mail" src="mail.png" /></a>
-            </li>
-            <li>
               <a href="#"> <img alt="Github" src="github.png" /></a>
             </li>
             <li>
               <a href="#"> <img alt="Linkedin" src="linkedin.png" /></a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+        <div class="contact-me">
+          <h2>Contact me</h2>
+
+          <form id="contact-form" action="" method="post">
+            <fieldset class="one">
+              <label for="fname"> Name:</label><br />
+              <input type="text" tabindex="1" required autofocus />
+            </fieldset>
+            <fieldset class="three">
+              <label for="msg">Message:</label><br />
+              <textarea tabindex="3" rows="10" cols="30" required></textarea>
+            </fieldset>
+
+            <fieldset class="two">
+              <label for="mail">E-mail:</label><br />
+              <input type="email" tabindex="2" required />
+            </fieldset>
+            <fieldset class="four">
+              <button name="submit" type="submit" tabindex="4">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </section>
-    <section class="section-two">
-      <h2>Portfölj</h2>
+    <section class="section-two" id="section-two">
+      <h2>Portfolio</h2>
       <div class="portfolio">
         <article class="box portfolio-one">
           <a href="#">
@@ -86,6 +112,6 @@
         </article>
       </div>
     </section>
-    <section class="section-three"><h5>Erfarenhet</h5></section>
+    <!-- <section class="section-three"><h5>Erfarenhet</h5></section> -->
   </body>
 </html>
