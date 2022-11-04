@@ -36,7 +36,8 @@ nav {
   background-color: BLACK;
 }
 .nav-list li a:hover {
-  background-color: BLACK;
+  background-color: white;
+  color: black;
 }
 .grid-container {
   display: grid;
@@ -62,6 +63,11 @@ nav {
   background: linear-gradient(to bottom, #33cc33 0%, #ffffff 100%);
   min-height: 100vh;
 }
+
+header {
+  background-color: #33cc33;
+}
+
 .profile-picture {
   position: absolute;
 }
@@ -222,17 +228,6 @@ nav {
   margin-top: 20px;
   font-size: 1rem;
 }
-/* #contact-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  border: 3px solid black;
-  text-align: center;
-  background-color: gray;
-  padding: 10px;
-  color: white;
-  border-radius: 15px;
-} */
 
 #contact-form fieldset {
   display: grid;
@@ -281,15 +276,41 @@ textarea {
 .four button {
   cursor: pointer;
   width: 50%;
-  border: none;
-  background: rgb(0, 110, 33);
-  color: #fff;
+  border: 2px solid white;
+  background: #005e05;
+  color: white;
   border-radius: 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 .four button:hover {
   background: #00ff0d;
   transition: background-color 0.3s ease-in-out;
 }
+
+footer {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #33cc33;
+}
+footer li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+footer li img {
+  width: 30px;
+  height: 30px;
+  transition: all 1s;
+}
+footer li img:hover {
+  transition: all 0.1s;
+  box-shadow: 0 0 10px 10px white;
+  background-color: white;
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 900px) {
   .section-one {
     min-height: 100vh;

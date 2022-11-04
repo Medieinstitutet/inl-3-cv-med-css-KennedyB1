@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="normalize" type="text/css" href="style/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,16 +18,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio with heigh-end content" />
+    <meta property="og:title" content="CV and portfolio webpage" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="#" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header></header>
-    <section class="section-one">
+    <header>
       <nav>
         <ul class="nav-list">
           <li><a href="#section-two">Portfolio</a></li>
         </ul>
       </nav>
+    </header>
+    <section class="section-one">
       <div class="grid-container">
         <div class="grid-item-1">
           <h1>
@@ -36,9 +43,21 @@
         </div>
         <div class="grid-item-2">
           <div class="profile-picture">
-            <img class="center" src="confetti" alt="Moving confetti" />
+            <img
+              class="center"
+              src="confetti"
+              height="250"
+              width="250"
+              alt="Moving confetti"
+            />
 
-            <img class="center-me" src="dog.jpg" alt="dog" />
+            <img
+              class="center-me"
+              src="dog.jpg"
+              height="250"
+              width="250"
+              alt="dog"
+            />
           </div>
         </div>
       </div>
@@ -47,16 +66,24 @@
         <div class="contact-icon">
           <ul>
             <li>
-              <a href="#"> <img alt="Facebook" src="facebook.png" /></a>
+              <a href="#">
+                <img alt="Facebook" src="facebook.png" width="30" height="30"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img alt="Instagram" src="instagram.png" /></a>
+              <a href="#">
+                <img alt="Instagram" src="instagram.png" width="30" height="30"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img alt="Github" src="github.png" /></a>
+              <a href="#">
+                <img alt="Github" src="github.png" width="30" height="30"
+              /></a>
             </li>
             <li>
-              <a href="#"> <img alt="Linkedin" src="linkedin.png" /></a>
+              <a href="#">
+                <img alt="Linkedin" src="linkedin.png" width="30" height="30"
+              /></a>
             </li>
           </ul>
         </div>
@@ -81,31 +108,6 @@
               </div>
             </fieldset>
           </form>
-
-          <!-- <form id="contact-form" action="action_page.php" method="post">
-            <fieldset class="one">
-              <legend></legend>
-              <label for="name"> Name:</label><br />
-              <input id="name" type="text" tabindex="1" required autofocus />
-            </fieldset>
-            <fieldset class="three">
-              <label for="msg">Message:</label><br />
-              <textarea
-                id="msg"
-                tabindex="3"
-                rows="10"
-                cols="30"
-                required
-              ></textarea>
-            </fieldset>
-            <fieldset class="two">
-              <label for="mail">E-mail:</label><br />
-              <input id="mail" type="email" tabindex="2" required />
-            </fieldset>
-            <fieldset class="four">
-              <button name="submit" type="submit" tabindex="4">Submit</button>
-            </fieldset>
-          </form> -->
         </div>
       </section>
     </section>
@@ -136,5 +138,31 @@
         </article>
       </div>
     </section>
+    <footer>
+      <div class="contact-icon">
+        <ul>
+          <li>
+            <a href="#">
+              <img alt="Facebook" src="facebook.png" width="30" height="30"
+            /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="Instagram" src="instagram.png" width="30" height="30"
+            /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="Github" src="github.png" width="30" height="30"
+            /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img alt="Linkedin" src="linkedin.png" width="30" height="30"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
