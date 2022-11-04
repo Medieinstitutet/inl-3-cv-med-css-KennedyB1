@@ -161,7 +161,7 @@ header {
   margin: 40px;
   height: 33vh;
   border: 5px solid black;
-  background: url("projekt-1.png") no-repeat center;
+  background: url("projekt-1.webp") no-repeat center;
   background-size: cover;
   background-color: #cccccc;
   position: relative;
@@ -170,7 +170,7 @@ header {
   margin: 40px;
   height: 33vh;
   border: 5px solid black;
-  background: url("projekt-2.png") no-repeat center;
+  background: url("projekt-2.webp") no-repeat center;
   background-size: cover;
   background-color: #cccccc;
   position: relative;
@@ -179,7 +179,7 @@ header {
   margin: 40px;
   height: 33vh;
   border: 5px solid black;
-  background: url("projekt-3.png") no-repeat center;
+  background: url("projekt-3.webp") no-repeat center;
   background-size: cover;
   background-color: #cccccc;
   position: relative;
@@ -189,7 +189,7 @@ header {
   height: 33vh;
   border: 5px solid black;
   background-color: transparent;
-  background: url("projekt-4.png") no-repeat center;
+  background: url("projekt-4.webp") no-repeat center;
   background-size: cover;
   background-color: #cccccc;
   position: relative;
